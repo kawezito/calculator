@@ -84,11 +84,11 @@ public class CalculatorTest {
     // Teste de números positivos
     assertTrue(calculator.isPositiveNums(positiveNum1, positiveNum2),
         "Esperado true para dois números positivos");
+  }
 
+  @Test
+  public void isPositiveNumsWithOneNegativeNumber() {
     assertFalse(calculator.isPositiveNums(negativeNum1, positiveNum1),
-        "Esperado false para um número negativo e um positivo");
-
-    assertFalse(calculator.isPositiveNums(positiveNum2, negativeNum2),
         "Esperado false para um número negativo e um positivo");
   }
 
@@ -97,11 +97,11 @@ public class CalculatorTest {
     // Teste de números negativos
     assertTrue(calculator.isNegativeNums(negativeNum1, negativeNum2),
         "Esperado true para dois  números negativos!");
+  }
 
+  @Test
+  public void isNegativeNumsWithOnePositiveNumber() {
     assertFalse(calculator.isNegativeNums(positiveNum1, negativeNum2),
-        "Esperado False para um número positivo e um negativo!");
-
-    assertFalse(calculator.isNegativeNums(negativeNum1, positiveNum2),
         "Esperado False para um número positivo e um negativo!");
   }
 }
