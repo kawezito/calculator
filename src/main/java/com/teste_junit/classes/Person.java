@@ -1,9 +1,9 @@
 package com.teste_junit.classes;
 
 public class Person {
-  String name;
-  String cpf;
-  int age;
+  private String name;
+  private String cpf;
+  private int age;
 
   public Person(String name, String cpf, int age) {
     this.name = name;
@@ -30,11 +30,11 @@ public class Person {
   public void setCpf(String cpf) {
     this.cpf = cpf;
   }
-
+  // Pega idade
   public int getAge() {
     return age;
   }
-
+  // Coloca valor em idade
   public void setAge(int age) {
     this.age = age;
   }
